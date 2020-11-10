@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Bitcoin Community</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="bitcoincommunity.community.com"><img src="images/Bit Comm logo..png" alt="Bitcoin Community"></a>
+            </div>
+
+            <div id="hamburger">
+                <span><i class="fas fa-bars"></i>
+            </div>
+
+            <div id="hamburger-menu">
+                <a href="#main-menu-toggle" class="menu-close">
+                    <span class="fa fa-close"></span>
+                  </a>
+                  <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+            </div>
+       </nav>
+    </header>
+
+    <div class="jumbotron">
+        <div class="jumbotron-content">
+            <h3 class="j-heading">Invest with Bitcoin Community and earn up to 50% ROI within 4 days</h3>
+            <button id="cta">Invest Now</button>
+        </div>
+        
+    </div>
+
+    <div class="widget">
+        <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+        <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#b0def2" locale="en"></coingecko-coin-price-marquee-widget>
+    </div>
+
+    <section class="steps">
+        <div class="step">
+            <img class="step-icon" src="images/svgs/add-user.svg" alt="Open an account">
+            <h4 class="step-info">1. Open An Account</h4>
+        </div>
+
+        <div class="step">
+            <img class="step-icon" src="images/svgs/purse.svg" alt="Fund">
+            <h4 class="step-info">2. Fund your account <br>using our convenient BTC </h4>
+        </div>
+
+        <div class="step">
+            <img class="step-icon" src="images/svgs/profits.svg" alt="Earn">
+            <h4 class="step-info">3. Start Making Profit</h4>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Invest in the world most sustainable an profitable asset</h2>
+        <p>Bitcoin is predicted by forbes to make very high profit. The Age of Bitcoin has only just begun, and the only better time to invest is now. </p>
+        <div class="widget">
+            <script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
+            <coingecko-coin-compare-chart-widget  coin-ids="bitcoin,ethereum,ripple" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
