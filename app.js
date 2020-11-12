@@ -1,9 +1,20 @@
-<script>
-  (function(b,i,t,C,O,I,N) {
-    window.addEventListener('load',function() {
-      if(b.getElementById(C))return;
-      I=b.createElement(i),N=b.getElementsByTagName(i)[0];
-      I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
-    },false)
-  })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
-</script>
+let link = document.getElementById("side-nav")
+let ham = document.getElementById('ham')
+
+ham.addEventListener('click', function(){
+  if (link.style.opacity === "block") {
+    link.style.display = "none";
+  } else {
+    link.style.display = "block";
+  }
+})
+
+// function myFunction() {
+//   var x = document.getElementById("myLinks");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
+

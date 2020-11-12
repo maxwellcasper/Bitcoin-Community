@@ -14,22 +14,21 @@
                 <a href="bitcoincommunity.community.com"><img src="images/Bit Comm logo..png" alt="Bitcoin Community"></a>
             </div>
 
-            <div id="hamburger">
-                <span><i class="fas fa-bars"></i>
+            <div id="ham">
+                <a href="#"><span><i class="fas fa-bars"></i></a>
             </div>
 
-            <div id="hamburger-menu">
-                <a href="#main-menu-toggle" class="menu-close">
-                    <span class="fa fa-close"></span>
-                  </a>
-                  <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-            </div>
        </nav>
     </header>
+
+    <div id="side-nav">
+        <div class="my-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Home.html">Contact</a></li>
+            <li><a href="Home.html">Login</a></li>
+            <li><a href="Home.html">Sign Up</a></li>
+        </div>
+    </div>
 
     <div class="jumbotron">
         <div class="jumbotron-content">
@@ -46,29 +45,89 @@
 
     <section class="steps">
         <div class="step">
-            <img class="step-icon" src="images/svgs/add-user.svg" alt="Open an account">
+            <img class="step-icon" srcset="images/svgs/add-user.svg" alt="Open an account">
             <h4 class="step-info">1. Open An Account</h4>
         </div>
 
         <div class="step">
-            <img class="step-icon" src="images/svgs/purse.svg" alt="Fund">
+            <img class="step-icon" srcset="images/svgs/purse.svg" alt="Fund">
             <h4 class="step-info">2. Fund your account <br>using our convenient BTC </h4>
         </div>
 
         <div class="step">
-            <img class="step-icon" src="images/svgs/profits.svg" alt="Earn">
+            <img class="step-icon" srcset="images/svgs/profits.svg" alt="Earn">
             <h4 class="step-info">3. Start Making Profit</h4>
         </div>
     </section>
 
     <section class="about">
-        <h2>Invest in the world most sustainable an profitable asset</h2>
-        <p>Bitcoin is predicted by forbes to make very high profit. The Age of Bitcoin has only just begun, and the only better time to invest is now. </p>
+        <h2 class="subheading">Invest in the world most sustainable and profitable asset</h2>
+        <p class="para">Bitcoin is predicted by forbes to make very high profit. The Age of Bitcoin has only just begun, and the only better time to invest is now. </p>
         <div class="widget">
             <script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
             <coingecko-coin-compare-chart-widget  coin-ids="bitcoin,ethereum,ripple" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
         </div>
     </section>
+
+    <section class="testimony">
+        <h2 class="subheading">What our clients are saying.</h2>
+        <p class="para">Trusted by thousands of investors around the world.</p>
+
+        <section class="stories">
+            <div class="story">
+                <div class="quote">&#8220;</div>
+                <p class="story-text">
+                    <b>Bitcoin Community</b>  has helped me to achieve my dreams by helping me make profit from my Bitcoin Investments and buying my dream house.
+                </p>
+                <p class="story-name">Brian Taylor</p>
+            </div>
+
+            <div class="story">
+                <div class="quote">&#8220;</div>
+                <p class="story-text">
+                    Thanks to the intelligent investors at <b>Bitcoin Community</b> i have been able to buy my dream house and car with no stress after  a month of investment.
+                </p>
+                <p class="story-name">Henry Wales</p>
+            </div>
+
+            <div class="story">
+                <div class="quote">&#8220;</div>
+                <p class="story-text">
+                    <b>Bitcoin Community</b>  has helped me to achieve my dreams by helping me make profit from my Bitcoin Investments and buying my dream house.
+                </p>
+                <p class="story-name">Amanda Johnson</p>
+            </div>
+
+            <div class="story">
+                <div class="quote">&#8220;</div>
+                <p class="story-text">
+                    <b>Bitcoin Community</b>  has helped me to achieve my dreams by helping me make profit from my Bitcoin Investments and buying my dream house.
+                </p>
+                <p class="story-name">Gabriella Marco</p>
+            </div>
+        </section>
+    </section>
+
+    <section>
+        <h2 class="subheading">Ready to make join us? and earn?</h2>
+        <p class="para">Create an account to start using the platform.</p>
+        <form id="sign-up" action="">
+            <label for="fname">Email:</label><br>
+            <input type="email" id="fname" placeholder="example@gmail.com"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password"><br>
+            <input id="form-btn" type="submit" value="Sign Up">
+        </form>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <a href="index.html"><img src="images/Bit Comm logo..png" alt="Bitcoin Coommunity"></a>
+            <h3>Bitcoin Community</h3>
+        </div>
+    </footer>
+
+
 
     <script src="app.js"></script>
 </body>
