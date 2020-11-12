@@ -2,7 +2,7 @@ let link = document.getElementById("side-nav")
 let ham = document.getElementById('ham')
 
 ham.addEventListener('click', function(){
-  if (link.style.opacity === "block") {
+  if (link.style.display === "block") {
     link.style.display = "none";
   } else {
     link.style.display = "block";
