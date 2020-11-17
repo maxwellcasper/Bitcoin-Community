@@ -1,20 +1,13 @@
-let link = document.getElementById("side-nav")
-let ham = document.getElementById('ham')
+const navSlide = () => {
+  const ham = document.querySelector('#ham');
+  const nav = document.querySelector('.my-links');
+  const navLinks = document.querySelectorAll('.nav-links');
 
-ham.addEventListener('click', function(){
-  if (link.style.display === "block") {
-    link.style.display = "none";
-  } else {
-    link.style.display = "block";
-  }
-})
+  ham.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+  })
+}
 
-// function myFunction() {
-//   var x = document.getElementById("myLinks");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
+navSlide();
+
 

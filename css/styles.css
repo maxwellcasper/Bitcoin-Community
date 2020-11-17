@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+
 }
 
 html {
@@ -10,6 +12,8 @@ html {
 
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  background-color: #161a25;
+
 }
 
 .fas {
@@ -40,31 +44,37 @@ nav {
   display: none;
 }
 
-#side-nav {
+.my-links {
   height: 100vh;
   background-color: #161a25;
-  position: fixed;
+  position: absolute;
   right: 0px;
-  z-index: 1;
   top: 6rem;
   overflow-x: hidden;
   transition: 0.5s;
-  display: none;
+  transform: translateX(100%);
   padding: 1rem 5rem;
+  transition: transform 0.5s ease-in;
+  /* width: 50%; */
 }
 
-#side-nav a {
+.nav-active{
+  transform: translatex(0%);
+}
+
+.side-nav a {
   padding: 8px 8px 10px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.6rem;
   color: white;
   display: block;
   transition: 0.3s;
   text-align: center;
   list-style: none;
+  /* opacity: 0; */
 }
 
-#side-nav a:hover {
+.side-nav a:hover {
   color: rgb(150, 230, 150);
 }
 
@@ -72,12 +82,20 @@ nav {
   text-align:center;
   background-image:url(/images/eb93f90b67e0022291381d4f429e4905.jpg) ;
   background-size: cover;
-  height: 30rem;
+  height: 40rem;
   margin-top: 2rem;
+}
+
+@keyframes heading {
+  0% {top: -50px}
+  100% {top: 0}
 }
 
 .jumbotron-content{
   padding-top: 15rem;
+  position: relative;
+  animation: heading 3s;
+  backface-visibility: hidden;
 }
 
 button {
@@ -118,13 +136,19 @@ button:active {
   padding: 2rem;
   margin: .5rem;
   border-radius: 1rem;
-
+  color: white;
+  background-color: white;
 }
 
-.step img {
+.step h4 {
+  color: black;
+}
+
+.step-icon {
   width: 100%;
   height: auto;
-  max-width: 5rem;
+  fill: white;
+  width: 6rem;
 }
 
 .subheading {
@@ -143,7 +167,7 @@ button:active {
 }
 
 .testimony {
-  background-color: rgb(235, 232, 232);
+  /* background-color: rgb(235, 232, 232); */
   padding: 1rem 0;
 }
 
@@ -157,24 +181,25 @@ button:active {
 }
 
 .story {
-  background-color: white;
   padding: 0rem 3rem 1rem 3rem;
   font-size: 1.4rem;
   line-height: 1.5;
   border-radius: 1rem;
-  /* max-width: 300px; */
+  border: 1px solid white;
 }
 
 .quote {
   font-size: 5rem;
   font-family: serif;
   padding-bottom: -1rem;
+  color: green;
 }
 
 .story-name {
   font-weight: bold;
   text-align: right;
   padding-top: 3rem;
+  color: green;
 
 }
 
@@ -196,9 +221,10 @@ button:active {
 
 #form-btn {
   margin-top: 2rem;
-  background-color: #161a25;
+  background-color: green;
   color: white;
   font-size: 1.8rem;
+  border: none;
 }
 
 footer {
@@ -240,4 +266,8 @@ footer {
 
 .center {
   text-align: center;
+}
+
+p {
+  color: white;
 }
