@@ -23,6 +23,7 @@ body {
 
 header {
   position: fixed;
+  z-index: 9;
   top: 0;
 }
 
@@ -33,6 +34,7 @@ nav {
   align-items: center;
   background-color: #161a25;
   position: fixed;
+  z-index: 5;
   width: 100%;
 }
 
@@ -52,14 +54,15 @@ nav {
   top: 6rem;
   overflow-x: hidden;
   transition: 0.5s;
-  transform: translateX(100%);
   padding: 1rem 5rem;
-  transition: transform 0.5s ease-in;
+  opacity: 0;
+  transition: transform 1s ease-in;
+  z-index: 9;
   /* width: 50%; */
 }
 
 .nav-active{
-  transform: translatex(0%);
+  opacity: 100;
 }
 
 .side-nav a {
