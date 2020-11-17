@@ -6,6 +6,10 @@ const navSlide = () => {
   ham.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
   })
+
+  document.addEventListener('mouseup', () => {
+    nav.classList.remove('nav-active')
+  })
 }
 
 navSlide();

@@ -49,7 +49,7 @@ nav {
 .my-links {
   height: 100vh;
   background-color: #161a25;
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 6rem;
   overflow-x: hidden;
@@ -122,8 +122,9 @@ button:active {
 .j-heading {
   color: white;
   padding: 0 2rem; 
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-size: 1.9rem;
+  line-height: 1.6;
 }
 
 .steps {
@@ -141,6 +142,10 @@ button:active {
   border-radius: 1rem;
   color: white;
   background-color: white;
+}
+
+.step:hover {
+  transfrom: scale(1.3);
 }
 
 .step h4 {
