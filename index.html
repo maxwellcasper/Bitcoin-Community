@@ -11,29 +11,28 @@
     <header>
         <nav class="nav">
             <div class="logo">
-                <a href="bitcoincommunity.community.com"><img src="images/Bit Comm logo..png" alt="Bitcoin Community"></a>
+                <a href="index.html"><img src="images/Bit Comm logo..png" alt="Bitcoin Community"></a>
             </div>
 
             <div id="ham">
                 <a href="#"><span><i class="fas fa-bars"></i></a>
             </div>
-
        </nav>
+
+        <div class="side-nav">
+            <div class="my-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </div>
+        </div>
     </header>
 
-    <div class="side-nav">
-        <div class="my-links">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Home.html">Contact</a></li>
-            <li><a href="Home.html">Login</a></li>
-            <li><a href="Home.html">Sign Up</a></li>
-        </div>
-    </div>
 
     <div class="jumbotron">
         <div class="jumbotron-content">
             <h3 class="j-heading">Invest with Bitcoin Community and earn up to 50% ROI within 4 days. Easy Deposit and fast withdrawals</h3>
-            <button id="cta">Invest Now</button>
+            <a id="cta" href="/signup/signup.html">SIgn Up</a>
         </div>
         
     </div>
@@ -43,23 +42,25 @@
         <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#b0def2" locale="en"></coingecko-coin-price-marquee-widget>
     </div>
 
-    <section class="steps">
-        <div class="step">
-            <img class="step-icon" srcset="images/svgs/add-user.svg" alt="Open an account">
-            <h4 class="step-info">1. Open An Account</h4>
-        </div>
-
-        <div class="step">
-            <img class="step-icon" srcset="images/svgs/purse.svg" alt="Fund">
-            <h4 class="step-info">2. Fund your account <br> through BTC </h4>
-        </div>
-
-        <div class="step">
-            <img class="step-icon" srcset="images/svgs/profits.svg" alt="Earn">
-            <h4 class="step-info">3. Start Making Profit</h4>
+    <section class="process">
+        <div class="steps">
+            <div class="step">
+                <img class="step-icon" srcset="images/svgs/add-user.svg" alt="Open an account">
+                <h4 class="step-info">1. Open An Account</h4>
+            </div>
+    
+            <div class="step">
+                <img class="step-icon" srcset="images/svgs/purse.svg" alt="Fund">
+                <h4 class="step-info">2. Fund your account <br> through BTC </h4>
+            </div>
+    
+            <div class="step">
+                <img class="step-icon" srcset="images/svgs/profits.svg" alt="Earn">
+                <h4 class="step-info">3. Start Making Profit</h4>
+            </div>
         </div>
     </section>
-
+    
     <section class="about">
         <h2 class="subheading">Invest in the world most sustainable and profitable asset</h2>
         <p class="para">Bitcoin is predicted by forbes to make very high profit. The Age of Bitcoin has only just begun, and the only better time to invest is now. </p>
@@ -108,14 +109,23 @@
         </section>
     </section>
 
-    <section>
+    <section class="register">
         <h2 class="subheading">Ready to make join us and earn?</h2>
         <p class="para">Create an account to start using the platform.</p>
-        <form id="sign-up" action="">
-            <label for="fname">Email:</label><br>
-            <input type="email" id="fname" placeholder="example@gmail.com"><br><br>
+
+        <form id="sign-up" class="home-form" action="" style="color: white;">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname"><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="example@gmail.com"><br><br>
+
             <label for="password">Password:</label><br>
             <input type="password" id="password"><br>
+
             <input id="form-btn" type="submit" value="Sign Up">
         </form>
     </section>
@@ -140,12 +150,7 @@
         <div class="copy-right">
             <small>bitcoin community 2020 - All rights reserved</small>
         </div>
-        
-
-
     </footer>
-
-
 
     <script src="app.js"></script>
 </body>
