@@ -1,8 +1,7 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 
 }
 
@@ -19,6 +18,11 @@ body {
 .fas {
   font-size: 3rem;
   color: white;
+}
+
+ul {
+  color: white;
+  font-size: 1.6rem;
 }
 
 header {
@@ -113,6 +117,7 @@ nav {
   border-color: none;
   background-color: rgb(9, 175, 9);
   color: white;
+  text-align: center;
 }
 
 
@@ -134,7 +139,7 @@ button:active {
 }
 
 .steps {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-around;
   margin: 5rem 2rem;
@@ -145,9 +150,10 @@ button:active {
   border: 2px solid #161a25;
   padding: 2rem;
   margin: .5rem;
-  border-radius: 1rem;
+  border-radius: .6rem;
   color: white;
   background-color: white;
+  /* width: 30%; */
 }
 
 .step h4 {
@@ -155,12 +161,11 @@ button:active {
 }
 
 .step-icon {
-  width: 4rem;
-  height: auto;
-  fill: white;
-  background-color: white;
-  width: 6rem;
+  max-width:100%;
+  height:10rem;
+
 }
+
 
 .subheading {
   font-size: 2.2rem;
@@ -235,7 +240,7 @@ button:active {
 
 .prompt {
   font-size: 2.2rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
   margin-bottom: 4rem;
   color: black;
 }
@@ -253,6 +258,27 @@ button:active {
   border-bottom: 1px solid white;
 }
 
+.why-us {
+  margin: 2px solid white;
+  padding: 0 2rem;
+}
+
+.why-us-list {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 2rem 
+}
+
+.last-btn {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+li {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
 footer {
   background-color: #161a25;
   color: white;
@@ -266,10 +292,14 @@ footer {
   align-items: center;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-logo {
   margin-bottom: 2rem;
+  /* margin-left: 2rem; */
+  max-width: 50rem;
+
 }
 
 .footer-logo img {
@@ -283,7 +313,7 @@ footer {
 }
 
 .footer-contact {
-  /* margin-left: 2rem; */
+  padding-right: 5rem;
 }
 
 .copy-right {
@@ -299,3 +329,31 @@ p {
   color: white;
 }
 
+@media only screen and (min-width: 800px) {
+  .j-heading {
+    font-size: 3rem;
+  }
+
+  .steps {
+    display: flex;
+    padding: 2rem;
+    flex: 0 0 30%;
+  }
+
+  .step {
+    padding: 5rem 8rem;
+  }
+
+  .stories {
+    display: flex;
+  }
+
+  .story {
+    margin: 2rem;
+  }
+
+  .story-icon {
+    height: 20rem;
+  }
+
+}
